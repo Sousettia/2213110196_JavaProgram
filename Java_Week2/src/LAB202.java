@@ -1,8 +1,7 @@
 import java.util.*;
-public class LAB202 
-{
-	public static void main(String[] args) 
-	{
+
+public class LAB202 {
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Input the number of minutes : ");
 		int minutes = scan.nextInt();
