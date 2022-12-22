@@ -32,12 +32,7 @@ public class Product
     {
         return price * unit;
     }
-    public void header(String message) 
-    {
-        System.out.println("------------------------");
-        System.out.println("List of product in \'" + message + "\' status.");
-        System.out.println("------------------------");
-    }
+
     public void output() 
     {
         System.out.println(">> " + getId() + " has " + getUnit() + " units");   
