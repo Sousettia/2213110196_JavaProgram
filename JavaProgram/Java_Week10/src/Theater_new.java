@@ -1,4 +1,4 @@
-public class Theater extends Movie {
+public class Theater_new extends Movie {
     private int theaterNo;
 
     public Theater(String id, String name, Director director, int theaterNo) {
@@ -25,7 +25,6 @@ public class Theater extends Movie {
     }
     @Override
     public String toString() {
-        return getTheaterName() + ": " + super.toString() ;
+        return getTheaterName() + ": " + super.toString() ; 
     }
-
 }
