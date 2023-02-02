@@ -1,7 +1,7 @@
 public class NewTheater extends NewMovie {
     private int theaterNo;
 
-    public NewTheater(String id, String name, NewDirector director, int theaterNo) {
+    public NewTheater(String id, String name, Director2 director, int theaterNo) {
         super(id, name, director);
         this.theaterNo = theaterNo;
     }
