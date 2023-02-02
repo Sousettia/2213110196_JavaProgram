@@ -29,7 +29,7 @@ public class NewMovieDemo {
         }
         scan.close();
         System.out.println();
-        NewTheater theater = new NewTheater(id,name, new NewDirector(dir_name, dir_email, dir_gender),theaterNo);
+        NewTheater theater = new NewTheater(id,name, new Director2(dir_name, dir_email, dir_gender),theaterNo);
         System.out.println(theater);
     }
 }
