@@ -1,5 +1,5 @@
-Date : 26-Jan-2023
+Date : 01-Feb-2023
 StudentID: 2213110196
 Fullname : Jirapat Anantasirijinda
 AKA      : Ping
-ClassDetail : Composition and Inheritance
+ClassDetail : : Inheritance and Polymorphism
