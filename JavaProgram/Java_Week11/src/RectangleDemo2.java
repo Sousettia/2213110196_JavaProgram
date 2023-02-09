@@ -10,6 +10,6 @@ public class RectangleDemo2 {
 
         Rectangle2 rec = new Rectangle2(width, length);
         System.out.println(rec + "color = " + Shape2.color + "\nArea of Rectangle is " + rec.getArea());
+        scan.close();
     }
-
 }

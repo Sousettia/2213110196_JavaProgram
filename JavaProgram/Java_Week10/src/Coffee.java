@@ -77,6 +77,6 @@ public class Coffee extends Drink {
         }
     }
     public String toString(){
-        return super.getTypeName() + " " + this.getTypeName() + " (" + this.getSizeName();
+        return super.getTypeName() + " " + this.getTypeName() + " (" + this.getSizeName() + ") is " + getTotalPrice();
     }
 }
