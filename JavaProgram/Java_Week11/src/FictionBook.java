@@ -1,5 +1,3 @@
-import java.sql.Date;
-
 public class FictionBook implements Author,Book{
 
     private String author_name;
@@ -35,18 +33,24 @@ public class FictionBook implements Author,Book{
 
     @Override
     public int totalPulicYear() {
-        return  - publicYear;
+        return 2023 - publicYear;
     }
 
     @Override
     public String getLastName() {
         int idx = author_name.lastIndexOf(' ');
+        if (idx == -1){
+            return null;
+        }
         return author_name.substring(idx + 1).toUpperCase();
     }
 
     @Override
     public String getFirstName() {
         int idx = author_name.lastIndexOf(' ');
+        if (idx == -1){
+            return null;
+        }
         return author_name.substring(0, idx).toUpperCase();
     }
 
@@ -62,6 +66,6 @@ public class FictionBook implements Author,Book{
     
     public String toString(){
         return getTitle() + " write by " + getLastName().charAt(0) + "." + getFirstName() + " (" + this.email + ")"+
-                "\nPublished for " + totalPulicYear() + " years";
+                "\nPublished for " + totalPulicYear() + " years.";
     }
 }
