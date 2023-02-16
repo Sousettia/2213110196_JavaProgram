@@ -16,21 +16,17 @@ public class FictionDemo1 {
         String authorEmail = scan.nextLine();
         book.setAuthorName(authorName);
         book.setEmail(authorEmail);
-        boolean namecheck = false;
-        boolean emailcheck = false;
         while(book.checkFormatName() == false){
             System.out.print("Input author name, again ([name] [surname])  : ");
             authorName = scan.nextLine();
             book.setAuthorName(authorName);
         }
-        namecheck = true;
         while(book.checkEmail() == false){
             System.out.print("Input author email, again (endswith @hotmail.com or @windowslive.com) : ");
             authorEmail = scan.nextLine();
             book.setEmail(authorEmail);
         }
-        emailcheck = true;
         System.out.println(book);
-        
+        scan.close();
     }
 }
